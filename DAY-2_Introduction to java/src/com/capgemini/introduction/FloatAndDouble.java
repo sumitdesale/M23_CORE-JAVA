@@ -18,6 +18,8 @@ public class FloatAndDouble {
 		System.out.println("enter numbers in point ");
 		float a=sc.nextFloat();
 		System.out.println("float runtime input example ="+a);
+		
+		sc.close();
 
 	}
 

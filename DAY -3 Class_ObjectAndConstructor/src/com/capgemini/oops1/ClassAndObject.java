@@ -22,7 +22,7 @@ public class ClassAndObject  {
 		 Scanner sc =new Scanner(System.in);
 		 int b=sc.nextInt();
 		 obj.print(b);
-		 
+		 sc.close();
 		
 		
 	}

@@ -1,7 +1,5 @@
 package com.capgemini.introduction;
  import java.util.*;
-
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 public class StringInput {
 
 	public static void main(String[] args) {
@@ -15,6 +13,8 @@ public class StringInput {
 		 System.out.println("1st output is ="+a);
 		 // it will print whole sentense
 		 System.out.println("2nd output is ="+b);
+		 
+		 sc.close();
 		
 	}
 

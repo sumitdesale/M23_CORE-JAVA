@@ -22,6 +22,9 @@ public class IntegerRunTimeInput {
 	char d=sc.next().charAt(0);
 	System.out.println("enter charecter");
 	System.out.println("run time input "+d);
+	
+	sc.close();
+	
 	}
 
 }
