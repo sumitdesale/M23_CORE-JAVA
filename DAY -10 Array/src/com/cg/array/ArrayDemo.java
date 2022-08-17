@@ -11,7 +11,7 @@ public class ArrayDemo {
 		System.out.println("the array index value is : "+arr[1]);
 		
 		/* array index out of bount exeption
-		System.out.println("the array index value is : "+arr[3]);
+		System.out.println("the array index value is : "+arr[4]);
 		*/
 		
 		
