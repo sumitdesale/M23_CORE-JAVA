@@ -3,10 +3,9 @@ package com.cg.exceptionhandling;
 @SuppressWarnings("serial")
 class CustomException extends Exception 
 {
-	private int detail;
-	public CustomException(int detail) 
+	private int detail;	public CustomException(int detail) 
 	{
-		super();
+		super();		
 		this.detail=detail;
 	}
 	public CustomException(String message) 
@@ -17,7 +16,7 @@ class CustomException extends Exception
 	public String toString() {
 		return "CustomException [detail=" + detail + "]";
 	}
-	
+  
 	
 }
 public class UserDefineException {
@@ -28,11 +27,26 @@ public class UserDefineException {
 			throw new CustomException(a);
 		System.out.println("no exception");
 	} 
+	static void print(String b) throws CustomException 
+	{
+		
+		String c="java";
+		if(c!=b) 
+		{
+			throw new CustomException(c);
+		}
+		else 
+		{
+			System.out.println("no exception");
+		}
+			
+	}
 
 	public static void main(String[] args) {
 		try 
 		{
 			accept(11);
+			//print("java");
 		}
 		catch(CustomException e) 
 		{
