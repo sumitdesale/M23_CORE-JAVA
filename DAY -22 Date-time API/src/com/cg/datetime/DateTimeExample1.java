@@ -6,6 +6,7 @@ import java.time.LocalTime;
 import java.time.Month;
 
 
+@SuppressWarnings("unused")
 public class DateTimeExample1 {
 
 	
