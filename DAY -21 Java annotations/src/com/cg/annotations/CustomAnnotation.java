@@ -14,22 +14,24 @@ import java.lang.reflect.Method;
 }
 class B
 {
-	@Custom (print="hello")
-	void display() 
+	@Custom (print="Its Holiday")
+	public void display2() 
 	{
-		System.out.println("its holiday");
+		System.out.println("Hello");
 	}
 }
+
+
 public class CustomAnnotation {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws NoSuchMethodException, SecurityException  {
 		 B b= new B();
-		 b.display();
-		 Method m=b.getClass().getMethod("display");
+		 b.display2();
+		 
+		 Method m=b.getClass().getMethod("display2");
 		Custom obj=m.getAnnotation(Custom.class);
-			System.out.println(obj.print());
-			 
-
+		System.out.println(obj.print());
+		 
 	}
 
 }
